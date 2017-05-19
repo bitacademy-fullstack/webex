@@ -12,7 +12,7 @@ import javax.servlet.http.HttpServletResponse;
 @WebServlet("/table")
 public class TableServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
-
+	
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		String row = request.getParameter( "r" );
 		if( row == null || row.matches("-?\\d+(\\.\\d+)?") == false) {

@@ -20,6 +20,7 @@ public class FormServlet extends HttpServlet {
 		String no = request.getParameter( "no" );
 		String email = request.getParameter( "email" );
 		String password = request.getParameter( "password" );
+		String birthYear = request.getParameter( "birth-year" );
 		String gender = request.getParameter( "gender" );
 		String[] hobbies = request.getParameterValues( "hobbies" );
 		String selfIntro = request.getParameter( "self-intro" );

@@ -21,6 +21,19 @@
 		여<input type="radio" name="gender" value="female">
 		<br/>
 		<br/>
+		생년
+		<br/>
+		<select name="birth-year">
+		<%
+			for( int year = 2010; year > 1970; year--) {
+		%>
+			<option value="<%=year %>"><%=year %>년</option>
+		<%
+			}
+		%>	
+		</select>
+		<br/>
+		<br/>
 		취미
 		<br/>
 		독서<input type="checkbox" name="hobbies" value="reading">
